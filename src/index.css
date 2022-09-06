@@ -1,13 +1,26 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,300;1,400&display=swap');
+*{
+  box-sizing: border-box;
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
+body{
+  list-style-type:none;
+  text-decoration: none;
+  background-image: url("./assets/image.jpg");
+  font-family: 'Lato', sans-serif;
+}
+.container{
+  width: 100%;
+  margin: 1rem auto;
+  background-color: darkslategrey;
+  border-radius: .6rem;
+}
+.grid{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  margin-left: .5px;
+  justify-content: center;
+  grid-gap: .2rem;
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
 }
